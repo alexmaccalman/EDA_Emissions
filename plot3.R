@@ -15,5 +15,5 @@ ggplot(Bal, aes(year, total)) +geom_point() + facet_grid(.~type) + labs(x = "Yea
               y = "Total PM2.5 Emissions", title = "Total Annual PM2.5 Emissions by Type", 
               subtitle = "Baltimore")
 
-dev.copy(png,'plot3.png')
+dev.copy(png,'plot3.png', width = 800, hieght = 480)
 dev.off()
